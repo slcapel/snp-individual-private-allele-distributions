@@ -34,7 +34,7 @@ sed -i "1 i $top1" $src1/PA_pops.tsv
 paste $src1/PA_pops.tsv $src1/populations.snps.filtered.GT.FORMAT > $src1/population.snps.PA_$popint.Indiv.tsv
 
 ### Remove loci with no private alleles sampeld in IL2003 and create individual genotypes file ###
-cat $src1/population.snps.PA_$popint.Indiv.tsv| grep "0/1\|1/1\|CHROM" > $src1/populations.PA_GT_Present_$popint.Indiv.snp.tsv
+cat $src1/population.snps.PA_$popint.Indiv.tsv| grep "0/1\|1/1\|CHROM" > $src1/$popint.Indiv.PA.GT.tsv
 
 # Calculate the number of individuals within population of interest
 numind=$(wc -l < $src1/$popint.indiv.txt)
@@ -64,8 +64,8 @@ do
     echo $i
 done > $src1/$popint.Indiv.PA.dist.tsv
 sed -i '1 i\P.A. Origin ' $src1/$popint.Indiv.PA.dist.tsv
-paste $src1/$popint.Indiv.PA.dist.tsv $(seq -f "$src1/temp%.0f" 6 $fc) > $src1/out.tsv
-cat $src1/out.tsv
+paste $src1/$popint.Indiv.PA.dist.tsv $(seq -f "$src1/temp%.0f" 6 $fc) > $src1/$popint.Indiv.PA.distribs.tsv
+cat $src1/$popint.Indiv.PA.distribs.tsv
 
 # Delete temporary files
 for i in $(seq 6 $fc)
