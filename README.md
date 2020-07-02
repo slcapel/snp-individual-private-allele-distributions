@@ -1,4 +1,4 @@
-# Individual Private Allele Genotypes for Population of Interest
+# Individual Private Allele Genotypes for a Population of Interest
 
 This script was designed to identify the distribution of private alleles among individuals of a population of interest following identification of private alleles among populatios of origin (see https://github.com/slcapel/snp-population-level-private-allele-tracker). While it is informative to identify the population-level distribution of private alleles present via maintenance and introgression, it can be equally important to understand how those private alleles are distributed among individuals of said population.
 
