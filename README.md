@@ -22,9 +22,9 @@ Once you have filled out the required inputs simply run the script on the comman
 
 ## Output files & format
 (1) `$popint.Indiv.PA.GT.tsv`: individual private allele genotypes
-** This file contains the genotypes of all individuals within the population of interest for asll private allele loci along with corresponding metadata
-** As with standard VCF files, diploid genotypes are coded as 0 for the major/most common allele and 1 for the minor allele - in this case the private allele
-** $popint will be the string designation for the population of interest
+* This file contains the genotypes of all individuals within the population of interest for asll private allele loci along with corresponding metadata
+* As with standard VCF files, diploid genotypes are coded as 0 for the major/most common allele and 1 for the minor allele - in this case the private allele
+* $popint will be the string designation for the population of interest
 
 | Column | Name | Description |
 | ------ | ---- | ----------- |
@@ -36,10 +36,10 @@ Once you have filled out the required inputs simply run the script on the comman
 | 6+ | _varies_ | The genotypes of each individual from the population of interest for each private allele locus |
 
 (2) `$popint.Indiv.PA.distribs.tsv`: individual distributions of private alleles from populations of origin
-** This file contains the number of private alleles from each population of origin for each individual within the population of interest
-** Individuals heterozygous for a private allele (i.e. 0/1) are considered to have 1 private allele at the given locus while thoes homozygous for a private allele (i.e. 1/1) are considered to have 2
-** The sum of private alleles from each population of origin is calulated by adding across all loci for each individual
-** $popint will be the string designation for the population of interest
+* This file contains the number of private alleles from each population of origin for each individual within the population of interest
+* Individuals heterozygous for a private allele (i.e. 0/1) are considered to have 1 private allele at the given locus while thoes homozygous for a private allele (i.e. 1/1) are considered to have 2
+* The sum of private alleles from each population of origin is calulated by adding across all loci for each individual
+* $popint will be the string designation for the population of interest
 | Column | Name | Description |
 | ------ | ---- | ----------- |
 | 1 | P.A. Origin | Population from which private alleles originated |
