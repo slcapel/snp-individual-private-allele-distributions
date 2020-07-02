@@ -12,7 +12,7 @@ This script cannot be executed properly without first identifying population-lev
 * Private Allele Tracker v1.0.0 (https://github.com/slcapel/snp-population-level-private-allele-tracker) output files
 
 ## Instructions
-**After running `population_private_alleles.sh`** simply fill out the following variables within the "INPUTS" box near the top of the script:
+**After running `population_private_alleles.sh`**, simply fill out the following variables within the "INPUTS" box near the top of the script:
 * Within the quotations following `popint` input the string used to designate your population of interest in your population map used by the _populations_ program of Stacks (Rochette et al. 2019)
 * Following `src1` input the path to directory containing populations run for all populations
 * Following `src2` input the path to directory containing populations run for populations of origin
