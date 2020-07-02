@@ -40,6 +40,7 @@ Once you have filled out the required inputs simply run the script on the comman
 * Individuals heterozygous for a private allele (i.e. 0/1) are considered to have 1 private allele at the given locus while thoes homozygous for a private allele (i.e. 1/1) are considered to have 2
 * The sum of private alleles from each population of origin is calulated by adding across all loci for each individual
 * $popint will be the string designation for the population of interest
+
 | Column | Name | Description |
 | ------ | ---- | ----------- |
 | 1 | P.A. Origin | Population from which private alleles originated |
