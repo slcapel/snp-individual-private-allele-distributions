@@ -4,7 +4,7 @@ This script was designed to identify the distribution of private alleles among i
 
 ![schmatic](https://github.com/slcapel/snp-individual-private-allele-genotypes/blob/master/Individual%20Private%20Allele%20Graphic.png?raw=true)
 
-This script cannot be executed properly without first identifying population-level private allele using https://github.com/slcapel/snp-population-level-private-allele-tracker. The final product of this script is a modified VCF file containing all individuals from the population of interest and their genotypes for each private allele locus.
+This script cannot be executed properly without first identifying population-level private allele using https://github.com/slcapel/snp-population-level-private-allele-tracker. The final products of this script are a modified VCF file containing individual genotypes for private alleles and a `.tsv` file with sums of private alleles from each population of origin for each individual.
 
 ## Requirements:
 * Linux-based environment with bash-5.0 or later
